@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.quiz-formats h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 111.5%;
+  text-align: center;
+  color: #191c1f;
+  padding: 0.7em 0.7em 0.7em
+}
+.quiz-formats p {
+  font-weight: 400;
+  text-align: center;
+  color: rgba(25, 28, 31, 0.53);
+  padding-bottom: 5%;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 111.5%;
+}
+.mid-section-container{
+  
+}
+@media only screen and (max-width: 700px) {
+  .quiz-formats p{
+    font-size:20px;
+  }
+
+}
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #004AAD;
+}

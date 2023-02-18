@@ -1,0 +1,81 @@
+.mb-3{
+    height: 100%;
+}
+.custom{
+background-color: #004AAD;
+}
+.fade{
+    background-color: #004AAD;
+    width: 100vw;
+}
+.show{
+    background-color: #004AAD;
+}
+.nav-link{
+    font-size: 20px;
+    margin: 0 20px;
+line-height: 23px;
+color: #FFFFFF;
+}
+.nav-link:hover{
+    
+color:#FFFFFF
+}
+.nav-link:focus{
+    
+    color:#FFFFFF
+    }
+.navBarContainer{
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height:115px;
+}
+.navbarLogo{
+    position: relative;
+    left:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.navbarLogo img{
+    width:47.5px;
+    height:53.95px;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon{
+    background-image: url("../images/toggle.png");
+}
+.btn-close {
+    background-image: url("../images/toggleClose.png");
+    width: 20px;
+    opacity: 1;
+    }
+@media only screen and (max-width: 780px){
+    .navBarContainer{
+        
+        height:60px;
+    }
+    .nav-link{
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 23px;
+    color:#FFFFFF
+    }
+    .navbarLogo{
+        position: relative;
+        left:25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .navbarLogo img{
+        width:30px;
+        height:34px;
+    }
+}

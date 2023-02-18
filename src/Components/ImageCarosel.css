@@ -1,0 +1,48 @@
+.model-paragraph{
+font-weight: 400;
+font-size: 24px;
+line-height: 111.5%;
+display: flex;
+align-items: center;
+
+color: #141415;
+}
+.modal-image{
+width: 500px;
+height: 500px;
+border-radius: 38px;
+}
+.modal-heading h1{
+font-weight: 600;
+font-size: 64px;
+line-height: 111.5%;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+color: #141415;
+}
+.wow-count{
+    background-color: #004AAD;
+}
+.wow-count span{
+margin:2px 10px;
+padding:5px;
+width: 40px;
+background-color: #FFFFFF;
+color: #004AAD;
+}
+
+.modal-footer{
+    margin-top: 2%;
+    justify-content: space-between;
+    display: flex;
+    color: #276FCE;
+    font-size: 22px;
+}
+@media only screen and (max-width: 780px){
+    .modal-image{
+        width: 400px;
+        height: 400px;
+        border-radius: 38px;
+        }
+}

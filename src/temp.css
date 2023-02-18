@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  body {
+    background-color: #f8f9ff;
+  }
+  
+  #mid-section-container {
+    width: 100%;
+    margin-top:5% 0;
+  }
+  #mid-section {
+    margin: 0 auto;
+  }
+  .quiz-formats {
+    text-align: center;
+    width: 100%;
+  }
+  .quiz-formats-type {
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: inset -3px -4px 1px rgba(186, 187, 191, 0.28);
+    border-radius: 38px;
+    margin: auto;
+  }
+  
+  .quiz-formats-wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 0 0 5%;
+    height: 100%;
+  }
+  .quiz-formats-type-content-left {
+    flex: 0.5;
+    height: 100%;
+  }
+  .quiz-formats-type-image-right img {
+    width: 80%;
+    height: 80%;
+    margin: auto auto 0 auto;
+  }
+  .quiz-formats-type-content-left h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 500;
+    line-height: 111.5%;
+    color: #004aad;
+  }
+  .quiz-formats-type-content-left p {
+    width: 100%;
+    font-weight: 400;
+    padding: 30px 0;
+    color: #191c1f;
+  }
+  
+  .quiz-formats-type-image-right {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .quiz-formats-type-image-left {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .quiz-formats-type-content-right {
+    flex: 0.5;
+    height: 100%;
+    padding: 80px 0;
+  }
+  .quiz-formats-type-content-right h1 {
+    width: 345px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 111.5%;
+    /* or 40px */
+    color: #004aad;
+  }
+  .quiz-formats-type-content-right p {
+    width: 454px;
+    height: 50px;
+    font-weight: 400;
+    line-height: 111.5%;
+    color: #191c1f;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    .image-left {
+      flex-direction: column;
+    }
+    .image-right {
+      flex-direction: column-reverse;
+    }
+    .quiz-formats-wrapper {
+      justify-content: center;
+      align-items: center;
+    }
+    .quiz-formats-type-content-left {
+      width: 100%;
+      align-items: center;
+    }
+    .quiz-formats-type-image-right img 
+    {
+      width: 40%;
+      height: 40%;
+    }
+  }
