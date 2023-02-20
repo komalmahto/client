@@ -1,7 +1,12 @@
 .dashed-line{
     border: 1px dashed red;
 }
-
+.line{
+    width:20px;
+    height:2px;
+    background-color:#004AAD;
+    
+}
 .footer{
 background: #004AAD;
 padding:3%;
@@ -68,10 +73,8 @@ display:flex;
     text-align: center;
     color: #F8F9FF;
 }
-/* .footer-center-content p{
-    font-size: 20px;
-    color: #FFFFFF
-} */
+
+
 @media only screen and (max-width: 950px) {
     .icons-wrapper a img{
         width: 30px;

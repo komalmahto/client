@@ -8,10 +8,37 @@ import linkedin from "../images/linkedin.png";
 import youtube from "../images/youtube.png";
 import qtopiatext from "../images/qtopia-text.png";
 function Footer() {
+  console.log(window.width);
   return (
     <>
-      {/* <p style={{ border: "1px dashed #004AAD" }}></p> */}
-      <div className="footer mt-5" id="footer">
+      <div
+        class="mt-5"
+        style={{ display: "flex", justifyContent: "space-between" }}
+      >
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+      <div className="mt-3 footer " id="footer">
         <div className="footer-wrapper">
           <div className="comp1">
             <img src={logo} alt="logo" />
@@ -19,21 +46,21 @@ function Footer() {
           <div className="comp2">
             <div className="footer-center-content">
               <div className="icons-wrapper">
-                <a href=" https://www.facebook.com/Qtopia-100787929589772">
+                <a divef=" https://www.facebook.com/Qtopia-100787929589772">
                   <img src={facebook} alt="facebook" />
                 </a>
-                <a href="https://www.instagram.com/qtopia_in/">
+                <a divef="https://www.instagram.com/qtopia_in/">
                   <img src={instagram} alt="facebook" />
                 </a>
 
-                <a href="https://twitter.com/qtopia_in">
+                <a divef="https://twitter.com/qtopia_in">
                   {" "}
                   <img src={twitter} alt="facebook" />
                 </a>
-                <a href="https://www.linkedin.com/company/qtopia-in/Telegram- https://t.me/qtopia_in">
+                <a divef="https://www.linkedin.com/company/qtopia-in/Telegram- https://t.me/qtopia_in">
                   <img src={linkedin} alt="facebook" />
                 </a>
-                <a href="https://www.youtube.com/">
+                <a divef="https://www.youtube.com/">
                   {" "}
                   <img src={youtube} alt="facebook" />
                 </a>
