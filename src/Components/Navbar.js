@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <>
       <div className="navBarContainer">
-        <Navbar sticky-top key={expand} expand={expand} className="mb-3 custom">
+        <Navbar key={expand} expand={expand} className="mb-3 custom">
           <Container fluid>
             <Navbar.Brand href="#">
               <div className="navbarLogo">

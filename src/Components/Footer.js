@@ -35,41 +35,16 @@ function Footer() {
     };
   }, [array]);
 
-  console.log(screenSize);
-  //return
-
   return (
     <>
       <div
-        class="mt-5"
+        className="mt-5"
         style={{ display: "flex", justifyContent: "space-between" }}
       >
         {array.length > 0 &&
           array.map((item, val) => {
-            return <div className="line"></div>;
+            return <div className="line" key={val}></div>;
           })}
-        {/* <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div> */}
       </div>
       <div className="mt-3 footer " id="footer">
         <div className="footer-wrapper">

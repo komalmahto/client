@@ -19,7 +19,6 @@ function Hero() {
       await axios.get(`${USER_SERVER}/getimages`).then((res) => {
         setImages(res.data);
         res.data?.map((item, val) => {
-          console.log(item.ipAddress.length);
           setReact((prev) => [...prev, item.ipAddress.length]);
         });
 

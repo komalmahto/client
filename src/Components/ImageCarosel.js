@@ -8,7 +8,6 @@ export default class ImageCarosel extends Component {
     super(props);
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
-    console.log(props);
   }
   state = {
     count: this.props.data.react,
@@ -28,16 +27,9 @@ export default class ImageCarosel extends Component {
             id: id,
           })
           .then((res) => {
-            console.log(res.data);
             const a = this.props.data.react;
             a[key] = res.data.ipAddress.length;
-            console.log(a);
             this.setState({ count: a });
-
-            // this.props.data.setReact((datas) => ({
-            //   ...datas,
-            //   [key]: this.data.ipAddress.length,
-            // }));
           });
       }
     });
@@ -56,26 +48,25 @@ export default class ImageCarosel extends Component {
           {this.props.data.images.map((item, key) => {
             return (
               <>
-                <div class="row">
-                  {/* <div class="col-4"></div> */}
-                  <div class="col-8 image-title">
-                    <h5 class="pt-2" style={{ color: "grey" }}>
+                <div className="row" key={key}>
+                  <div className="col-8 image-title">
+                    <h5 className="pt-2" style={{ color: "grey" }}>
                       If you like it give it a{" "}
                     </h5>{" "}
                   </div>
-                  <div class="col-3 d-flex mb-3 image-button">
+                  <div className="col-3 d-flex mb-3 image-button">
                     <button
                       onClick={() => this.handleClick(item._id, key)}
                       type="button"
-                      class="btn btn-primary btn-lg wow-count"
+                      className="btn btn-primary btn-lg wow-count"
                     >
                       Wow!
                       <span>{this.state.count[key]}</span>
                     </button>
                   </div>
-                  <div class="col-1"></div>
+                  <div className="col-1"></div>
                   <div
-                    class="col-12 d-flex justify-content-center align-items-center flex-column"
+                    className="col-12 d-flex justify-content-center align-items-center flex-column"
                     style={{ color: "black" }}
                   >
                     <img
@@ -85,15 +76,15 @@ export default class ImageCarosel extends Component {
                     />
                   </div>
                 </div>
-                <div class="col-12 modal-footer" style={{}}>
+                <div className="col-12 modal-footer" style={{}}>
                   <button className="button" onClick={this.previous}>
-                    <i class="bi-arrow-left"></i>
+                    <i className="bi-arrow-left"></i>
                     Prev
                   </button>
 
                   <button className="button" onClick={this.next}>
                     Next
-                    <i class="bi-arrow-right"></i>
+                    <i className="bi-arrow-right"></i>
                   </button>
                 </div>
               </>

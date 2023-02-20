@@ -8,8 +8,7 @@ export default class Modal extends Component {
       backgroundColor: "#000000",
       color: "white",
     };
-    // const des = this.props.content;
-    console.log(this.props);
+
     return (
       <div className="modal show fade" tabindex="-1" style={modelStyle}>
         <div className="modal-dialog modal-lg modal-dialog-scrollable">

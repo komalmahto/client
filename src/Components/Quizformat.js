@@ -5,8 +5,6 @@ import img2 from "../images/img2.png";
 import img3 from "../images/img3.png";
 import img4 from "../images/img4.png";
 import img5 from "../images/img5.png";
-import img6 from "../images/img6.png";
-import Slider from "./Slider.js";
 
 function Quizformat() {
   return (
@@ -28,13 +26,13 @@ function Quizformat() {
               </p>
             </div>
             <div className="quiz-image col-md-5  order-2 order-lg-2 d-flex justify-content-center align-items-center ">
-              <img class="pt-2" src={img1} alt="img1"></img>
+              <img className="pt-2" src={img1} alt="img1"></img>
             </div>
           </div>
 
           <div className="row cards mb-4">
             <div className="quiz-image col-md-5  order-2 order-lg-1 d-flex justify-content-center align-items-center ">
-              <img class="pt-2" src={img2} alt="img1"></img>
+              <img className="pt-2" src={img2} alt="img1"></img>
             </div>
             <div className=" quiz-content pt-3 col-md-7 pt-1 pt-lg-0 order-1 order-lg-2 d-flex justify-content-center flex-column">
               <h1 className="single-player ">Multiplayer Quiz</h1>
@@ -53,13 +51,13 @@ function Quizformat() {
               </p>
             </div>
             <div className="quiz-image col-md-5  order-2 order-lg-2 d-flex justify-content-center align-items-center ">
-              <img class="pt-2" src={img3} alt="img1"></img>
+              <img className="pt-2" src={img3} alt="img1"></img>
             </div>
           </div>
 
           <div className="row cards mb-4">
             <div className="quiz-image col-md-5  order-2 order-lg-1 d-flex justify-content-center align-items-center ">
-              <img class="pt-2" src={img4} alt="img1"></img>
+              <img className="pt-2" src={img4} alt="img1"></img>
             </div>
             <div className="quiz-content pt-3 col-md-7 pt-1 pt-lg-0 order-1 order-lg-2 d-flex justify-content-center flex-column">
               <h1 className="single-player ">Quiz Tournaments</h1>
@@ -78,7 +76,7 @@ function Quizformat() {
               </p>
             </div>
             <div className="quiz-image col-md-5  order-2 order-lg-2 d-flex justify-content-center align-items-center ">
-              <img class="pt-2" src={img5} alt="img1"></img>
+              <img className="pt-2" src={img5} alt="img1"></img>
             </div>
           </div>
         </div>
