@@ -2,7 +2,7 @@
 .testimonials{
     width: 500px;
     height: 300px;
-    background: #A3A7DE;
+    /* background: #A3A7DE; */
     box-shadow: inset -4px -5px 0px rgba(0, 0, 0, 0.09);
     border-radius: 30px;   
 }
@@ -14,7 +14,7 @@
     width: 500px;
     height: 300px; 
     margin: 0 10px;
-    background: #276FCE;
+    /* background: #276FCE; */
     box-shadow: inset -4px -5px 0px rgba(0, 0, 0, 0.09);
     border-radius: 30px;
 }

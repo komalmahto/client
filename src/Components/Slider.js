@@ -8,7 +8,7 @@ function A() {
     className: "center",
     centerMode: true,
     infinite: true,
-    dots: true,
+    // dots: true,
     focusOnSelect: true,
     infinite: true,
     slidesToShow: 2,
@@ -56,11 +56,20 @@ function A() {
                   h1: "Anand Vaibhav",
                   p: "I often challenge my friend to test our knowledge. Sometimes I loose, sometimes I win but I learn everytime I play",
                 },
+                {
+                  h1: "Anand Vaibhav",
+                  p: "I often challenge my friend to test our knowledge. Sometimes I loose, sometimes I win but I learn everytime I play",
+                },
               ].map((item, idx) => {
                 return (
                   <div className="testimonials-wrapper">
-                    <div className="testimonials">
-                      <div className="testimonials-content  ">
+                    <div
+                      className="testimonials"
+                      style={{
+                        backgroundColor: idx % 2 === 0 ? "#A3A7DE" : "#276FCE",
+                      }}
+                    >
+                      <div className="testimonials-content">
                         <h1>{item.h1}</h1>
                         <p>{item.p}</p>
                       </div>

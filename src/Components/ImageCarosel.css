@@ -7,11 +7,20 @@ align-items: center;
 
 color: #141415;
 }
+.image-title{
+   display: flex;
+   justify-content: flex-end;
+}
 .modal-image{
 width: 500px;
 height: 500px;
 border-radius: 38px;
 }
+.image-button{
+   display: flex;
+   justify-content: center; 
+}
+
 .modal-heading h1{
 font-weight: 600;
 font-size: 64px;
@@ -23,13 +32,15 @@ color: #141415;
 }
 .wow-count{
     background-color: #004AAD;
+    
 }
 .wow-count span{
-margin:2px 10px;
-padding:5px;
+margin-left: 5px;
+padding:2px 10px;
 width: 40px;
 background-color: #FFFFFF;
 color: #004AAD;
+border-radius: 2px;;
 }
 
 .modal-footer{
@@ -45,4 +56,7 @@ color: #004AAD;
         height: 400px;
         border-radius: 38px;
         }
+    .image-title{
+        justify-content: center;
+    }
 }

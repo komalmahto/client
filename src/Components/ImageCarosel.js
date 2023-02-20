@@ -43,18 +43,12 @@ export default class ImageCarosel extends Component {
               <>
                 <div class="row">
                   {/* <div class="col-4"></div> */}
-                  <div
-                    class="col-8"
-                    style={{ display: "flex", justifyContent: "flex-end" }}
-                  >
+                  <div class="col-8 image-title">
                     <h5 class="pt-2" style={{ color: "grey" }}>
                       If you like it give it a{" "}
                     </h5>{" "}
                   </div>
-                  <div
-                    class="col-3 d-flex mb-3"
-                    style={{ display: "flex", justifyContent: "flex-end" }}
-                  >
+                  <div class="col-3 d-flex mb-3 image-button">
                     <button
                       onClick={() => this.handleClick(item._id)}
                       type="button"
@@ -64,6 +58,7 @@ export default class ImageCarosel extends Component {
                       <span>{item.ipAddress.length}</span>
                     </button>
                   </div>
+                  <div class="col-1"></div>
                   <div
                     class="col-12 d-flex justify-content-center align-items-center flex-column"
                     style={{ color: "black" }}
