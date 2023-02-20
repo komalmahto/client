@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Footer.css";
 import logo from "../images/logo.png";
 import facebook from "../images/facebook.png";
@@ -8,13 +8,47 @@ import linkedin from "../images/linkedin.png";
 import youtube from "../images/youtube.png";
 import qtopiatext from "../images/qtopia-text.png";
 function Footer() {
-  console.log(window.width);
+  const [screenSize, setScreen] = useState(window.innerWidth);
+  const [array, setArray] = useState([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+  ]);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreen(window.innerWidth);
+      const a = [];
+      for (var i = 0; i < window.innerWidth / 70; i++) {
+        a.push(i);
+      }
+      setArray(a);
+    });
+    return () => {
+      window.removeEventListener("resize", () => {
+        setScreen(window.innerWidth);
+
+        const a = [];
+        for (var i = 0; i < window.innerWidth / 70; i++) {
+          a.push(i);
+        }
+        setArray(a);
+      });
+    };
+  }, [array]);
+
+  console.log(screenSize);
+  //return
+
   return (
     <>
       <div
         class="mt-5"
         style={{ display: "flex", justifyContent: "space-between" }}
       >
+        {array.length > 0 &&
+          array.map((item, val) => {
+            return <div className="line"></div>;
+          })}
+        {/* <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
@@ -35,8 +69,7 @@ function Footer() {
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+        <div className="line"></div> */}
       </div>
       <div className="mt-3 footer " id="footer">
         <div className="footer-wrapper">
