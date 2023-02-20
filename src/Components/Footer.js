@@ -79,23 +79,19 @@ function Footer() {
           <div className="comp2">
             <div className="footer-center-content">
               <div className="icons-wrapper">
-                <a divef=" https://www.facebook.com/Qtopia-100787929589772">
+                <a href=" https://www.facebook.com/Qtopia-100787929589772">
                   <img src={facebook} alt="facebook" />
                 </a>
-                <a divef="https://www.instagram.com/qtopia_in/">
+                <a href="https://www.instagram.com/qtopia_in/">
                   <img src={instagram} alt="facebook" />
                 </a>
 
-                <a divef="https://twitter.com/qtopia_in">
+                <a href="https://twitter.com/qtopia_in">
                   {" "}
                   <img src={twitter} alt="facebook" />
                 </a>
-                <a divef="https://www.linkedin.com/company/qtopia-in/Telegram- https://t.me/qtopia_in">
+                <a href="https://www.linkedin.com/company/qtopia-in/Telegram- https://t.me/qtopia_in">
                   <img src={linkedin} alt="facebook" />
-                </a>
-                <a divef="https://www.youtube.com/">
-                  {" "}
-                  <img src={youtube} alt="facebook" />
                 </a>
               </div>
               <p style={{ color: "#FFFFFF" }}>

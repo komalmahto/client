@@ -9,6 +9,7 @@ import Modal from "./Modal";
 function Hero() {
   const [images, setImages] = useState([]);
   const [model, setModel] = useState(false);
+  const [react, setReact] = useState([]);
   const img = [
     "https://media.istockphoto.com/id/1195743934/vector/cute-panda-character-vector-design.jpg?s=612x612&w=0&k=20&c=J3ht-bKADmsXvF6gFIleRtfJ6NGhXnfIsrwlsUF8w80=",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdnuRYL5NEno9_cKqcynTuixJaphYYJOqpWhWQkra_w&s",
@@ -16,8 +17,12 @@ function Hero() {
   const getImages = async () => {
     try {
       await axios.get(`${USER_SERVER}/getimages`).then((res) => {
-        console.log(res.data);
         setImages(res.data);
+        res.data?.map((item, val) => {
+          console.log(item.ipAddress.length);
+          setReact((prev) => [...prev, item.ipAddress.length]);
+        });
+
         setModel(true);
       });
     } catch (err) {
@@ -29,10 +34,11 @@ function Hero() {
       <div className="row hero">
         <div className="col-md-7 pt-1 pt-lg-0 order-2 order-md-1 order-lg-1 d-flex justify-content-center flex-column">
           <div className="hero-sec-wrapper">
-            <h1>QUIZ, LEARN AND LEARN!</h1>
+            <h1>Qtopia : Quiz, Fun & Money</h1>
             <p>
-              Join the quizzing revolution and turn your trivia into riches.
-              Join our telegram channel now!
+              Want to turn your trivia skills into cash? Join the Qtopia
+              revolution! Head to our telegram channel to play daily quizzes and
+              win exciting prizes
             </p>
             <a href="https://t.me/qtopia_in">
               <button className="btn-get-started main-color" target="_blank">
@@ -63,7 +69,12 @@ function Hero() {
         </div>
       </div>
       {model === true ? (
-        <Modal images={images} hide={() => setModel(false)} />
+        <Modal
+          images={images}
+          setReact={setReact}
+          react={react}
+          hide={() => setModel(false)}
+        />
       ) : (
         ""
       )}

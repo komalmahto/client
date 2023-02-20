@@ -57,10 +57,6 @@ function A() {
                   h1: "Anand Vaibhav",
                   p: "I often challenge my friend to test our knowledge. Sometimes I loose, sometimes I win but I learn everytime I play",
                 },
-                {
-                  h1: "Anand Vaibhav",
-                  p: "I often challenge my friend to test our knowledge. Sometimes I loose, sometimes I win but I learn everytime I play",
-                },
               ].map((item, idx) => {
                 return (
                   <div className="testimonials-wrapper">

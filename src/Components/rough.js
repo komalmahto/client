@@ -10,9 +10,7 @@ export default class ImageCarosel extends Component {
     this.previous = this.previous.bind(this);
     console.log(props);
   }
-  state = {
-    count: this.props.data.react,
-  };
+
   next() {
     this.slider.slickNext();
   }
@@ -32,7 +30,6 @@ export default class ImageCarosel extends Component {
             const a = this.props.data.react;
             a[key] = res.data.ipAddress.length;
             console.log(a);
-            this.setState({ count: a });
 
             // this.props.data.setReact((datas) => ({
             //   ...datas,
@@ -70,7 +67,7 @@ export default class ImageCarosel extends Component {
                       class="btn btn-primary btn-lg wow-count"
                     >
                       Wow!
-                      <span>{this.state.count[key]}</span>
+                      <span>{this.props.data.react[key]}</span>
                     </button>
                   </div>
                   <div class="col-1"></div>
