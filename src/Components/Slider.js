@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import telegramicon from "../images/telegramicon.png";
 import "./Slider.css";
 function A() {
   const settings = {
@@ -78,6 +79,38 @@ function A() {
                 );
               })}
             </Slider>
+            <div class="row mt-5">
+              <div class="col-12 d-flex justify-content-center align-items-center">
+                <div>
+                  <h3 style={{ color: "#004AAD", letterSpacing: "0.07em" }}>
+                    Join our telegram channel!
+                  </h3>
+                  <div class="mt-4 d-flex justify-content-center align-items-center">
+                    <button
+                      className="btn-get-started main-color"
+                      target="_blank"
+                      style={{ backgroundColor: "#004AAD" }}
+                    >
+                      <div className="button-content">
+                        <span>
+                          <img
+                            className="telegramIcon"
+                            src={telegramicon}
+                            alt="telegram"
+                          />
+                        </span>
+                        <span
+                          style={{ color: "#FFFFFF" }}
+                          className="pt-2 button-text"
+                        >
+                          JOIN NOW
+                        </span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

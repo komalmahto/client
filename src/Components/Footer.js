@@ -11,7 +11,7 @@ function Footer() {
   return (
     <>
       {/* <p style={{ border: "1px dashed #004AAD" }}></p> */}
-      <div className="footer" id="footer">
+      <div className="footer mt-5" id="footer">
         <div className="footer-wrapper">
           <div className="comp1">
             <img src={logo} alt="logo" />
