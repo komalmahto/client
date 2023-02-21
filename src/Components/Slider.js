@@ -82,27 +82,29 @@ function A() {
                     Join our telegram channel!
                   </h3>
                   <div className="mt-4 d-flex justify-content-center align-items-center">
-                    <button
-                      className="btn-get-started main-color"
-                      target="_blank"
-                      style={{ backgroundColor: "#004AAD" }}
-                    >
-                      <div className="button-content">
-                        <span>
-                          <img
-                            className="telegramIcon"
-                            src={telegramicon}
-                            alt="telegram"
-                          />
-                        </span>
-                        <span
-                          style={{ color: "#FFFFFF" }}
-                          className="pt-2 button-text"
-                        >
-                          JOIN NOW
-                        </span>
-                      </div>
-                    </button>
+                    <a href="https://t.me/qtopia_in">
+                      <button
+                        className="btn-get-started main-color"
+                        target="_blank"
+                        style={{ backgroundColor: "#004AAD" }}
+                      >
+                        <div className="button-content">
+                          <span>
+                            <img
+                              className="telegramIcon"
+                              src={telegramicon}
+                              alt="telegram"
+                            />
+                          </span>
+                          <span
+                            style={{ color: "#FFFFFF" }}
+                            className="pt-2 button-text"
+                          >
+                            JOIN NOW
+                          </span>
+                        </div>
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
