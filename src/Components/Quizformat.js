@@ -14,7 +14,7 @@ function Quizformat() {
         <div id="mid-section">
           <div className="quiz-formats">
             <h3>QUIZ FORMATS</h3>
-            <p>Ways to put your trivia kills to the ultimate tests</p>
+            <p>Ways to put your trivia skills to the ultimate tests</p>
           </div>
 
           <div className="row cards mb-4">
