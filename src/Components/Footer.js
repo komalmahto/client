@@ -100,7 +100,7 @@ function Footer() {
                 </div>
                 <div style={{ display: "flex" }}>
                   <div class="flex justify-around items-center ">
-                    <a
+                    <Link
                       href="/policy/in-policy"
                       rel="noreferrer noopener"
                       style={{ textDecoration: "none" }}
@@ -112,7 +112,7 @@ function Footer() {
                       >
                         Privacy Policy
                       </p>
-                    </a>
+                    </Link>
                     <div
                       style={{
                         marginBottom: "20px",
@@ -124,7 +124,7 @@ function Footer() {
                       |
                     </div>
 
-                    <a
+                    <Link
                       target="_blank"
                       href="/terms/in-terms"
                       rel="noreferrer noopener"
@@ -136,7 +136,7 @@ function Footer() {
                       >
                         Terms &amp; Conditions
                       </p>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
