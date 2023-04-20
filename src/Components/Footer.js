@@ -101,7 +101,7 @@ function Footer() {
                 <div style={{ display: "flex" }}>
                   <div class="flex justify-around items-center ">
                     <Link
-                      href="/policy/in-policy"
+                      to="/policy/in-policy"
                       rel="noreferrer noopener"
                       style={{ textDecoration: "none" }}
                       target="_blank"
@@ -126,7 +126,7 @@ function Footer() {
 
                     <Link
                       target="_blank"
-                      href="/terms/in-terms"
+                      to="/terms/in-terms"
                       rel="noreferrer noopener"
                       style={{ textDecoration: "none" }}
                     >
