@@ -12,9 +12,8 @@ padding:3%;
 }
 .footer-wrapper{
     display:flex;
-   
     text-align: center; 
-    width:80%;
+    width:90%;
     margin: 0 auto;;
     padding:3% 0;
 }
@@ -58,8 +57,8 @@ display:flex;
 }
 .comp3-wrapper{
     display:flex;
-   
-   
+    text-align: center;
+    justify-content: center;
 }
 .comp3-wrapper img{
     width: 108px;

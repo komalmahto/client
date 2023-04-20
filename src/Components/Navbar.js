@@ -15,7 +15,7 @@ function NavBar() {
             <Navbar.Brand href="#">
               <div className="navbarLogo">
                 <img src={navbarLogo} alt="" />
-              </div>{" "}
+              </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
